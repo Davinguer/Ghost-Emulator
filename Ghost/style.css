@@ -1,0 +1,154 @@
+body{
+    background-color: rgb(39, 41, 60);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(12, 1, 110, 0.5)), url(img/montanha\ ml.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.container{
+    display: flex;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0,10vh ;
+    grid-template-areas:  
+    "header header" 
+    "footer footer";
+}
+HEADER{
+
+    box-sizing: border-box;
+    justify-content: center;
+  
+}
+
+.texto-digitando{
+    font-size: 200px;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    display: flex;
+    font-family: 'Space Grotesk', sans-serif;
+    animation: animacao-texto 1s ease-in-out;
+    align-content: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+@keyframes animacao-texto {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+span{
+    color: rgb(114, 89, 243);
+}
+.ghost{
+    background-color: rgb(28, 28, 53);
+    width: 350px;
+    height: 350px;
+    background-image: url(img/fantasma\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    display: flex;
+    border-radius: 1000px;
+    margin: 100px;
+}
+.texto-animado{
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    font-weight: 100;
+    margin:  0 auto;
+    font-family:'Courier New', Courier, monospace;
+    border-right:  2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+   
+}
+.texto-animado{
+animation: blinkCursor 500ms steps(40)  infinite normal, typen 4s steps(40) 1s normal both;
+}
+
+@keyframes blinkCursor{
+    from{
+       border-right-color: rgba(255, 255, 255, 0.75)  
+    }
+    to{
+        border-right-color:transparent;  
+
+    }
+}
+@keyframes typen{
+    from{
+     width: 0;
+    }
+    to{
+    width: 18em;
+    }
+}
+.paredao{
+    height: 2000px;
+    width: 3000px;
+    background-color: rgba(51, 55, 86, 0.313);
+    border-radius: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px;
+    box-shadow: 2px 2px 4px rgb(48, 11, 11);
+    border: 10px solid rgba(255, 255, 255, 0.432);
+}
+h2{
+    margin: 0 auto;
+    color: aliceblue;
+    font-size: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    margin: 100px;
+
+}
+input{
+    width: 2000px;
+    height: 150px;
+    font-size: 70px;
+    border-radius: 100px;
+   background-color: rgba(0, 0, 255, 0);
+   border: 10px solid white;
+   color: white;
+   text-decoration: none;
+   box-sizing: border-box;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   align-self: center;
+   font-family: 'Courier New', Courier, monospace;
+   transform: translate(24%, 800%);
+  }
+  .ghost02{
+    height: 300px;
+    width: 300px;
+    background-color: aliceblue;
+    background-image: url(img/fantasma\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    border: 15px solid white;
+  }
+  footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+  }
+  h4{
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 50px;
+    font-weight: 100;
+    margin:  0 auto;
+    padding:  100px;
+  }
